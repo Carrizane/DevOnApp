@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    android:layout_margin="10dp"
+    android:id="@+id/cardProductH"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageProductH"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/samsung_logo"
+            android:scaleType="fitCenter"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/nameProductH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo"
+                android:text="Device Name"
+                android:textColor="#55709E"
+                android:textSize="20sp"
+                android:layout_marginStart="15dp"/>
+
+            <RatingBar
+                android:id="@+id/ratingBarH"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rating="3.5"
+                android:layout_below="@+id/nameProductH"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:id="@+id/priceProductH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:gravity="center"
+                android:drawableStart="@drawable/ic_money"
+                android:textColor="#55709E"
+                android:textSize="15sp"
+                android:layout_marginStart="15dp"
+                android:layout_below="@+id/ratingBarH"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

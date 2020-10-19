@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    android:layout_margin="10dp"
+    android:id="@+id/cardCart"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageCart"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/samsung_logo"
+            android:scaleType="fitCenter"/>
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/nameCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo"
+                android:text="Device Name"
+                android:textColor="#55709E"
+                android:textSize="20sp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:id="@+id/totalProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:gravity="center"
+                android:drawableStart="@drawable/ic_money"
+                android:textColor="#55709E"
+                android:textSize="15sp"
+                android:layout_marginStart="15dp"
+                android:layout_below="@+id/nameCart"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/quantityProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number"
+            android:gravity="center"
+            android:drawableStart="@drawable/ic_times"
+            android:textColor="#55709E"
+            android:textSize="15sp"
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/nameCart"
+            android:layout_marginTop="10dp"
+            android:layout_marginVertical="30dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/deleteProduct"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/custom_delete_button"
+        android:text="x"
+        android:textColor="#fff"
+        android:layout_gravity="end"/>
+
+</androidx.cardview.widget.CardView>
